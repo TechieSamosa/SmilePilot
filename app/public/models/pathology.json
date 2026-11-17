@@ -1,0 +1,70 @@
+{
+  "task": "pathology",
+  "version": "pathology-2026-11-17",
+  "imgsz": 960,
+  "classes": [
+    "implant",
+    "crown_bridge",
+    "filling",
+    "root_canal_treatment",
+    "caries",
+    "bone_loss",
+    "impacted_tooth",
+    "periapical_lesion",
+    "root_fragment",
+    "furcation_lesion",
+    "apical_surgery",
+    "root_resorption",
+    "orthodontic_device",
+    "surgical_device"
+  ],
+  "test_map50": 0.6503,
+  "test_map50_95": 0.3116,
+  "per_class_map50": {
+    "implant": 0.9581,
+    "crown_bridge": 0.76,
+    "filling": 0.7704,
+    "root_canal_treatment": 0.9284,
+    "caries": 0.5275,
+    "bone_loss": 0.3084,
+    "impacted_tooth": 0.9375,
+    "periapical_lesion": 0.5068,
+    "root_fragment": 0.7784,
+    "furcation_lesion": 0.3179,
+    "apical_surgery": 0.0107,
+    "orthodontic_device": 0.7019,
+    "surgical_device": 0.9486
+  },
+  "thresholds": {
+    "implant": 0.539,
+    "crown_bridge": 0.379,
+    "filling": 0.2,
+    "root_canal_treatment": 0.322,
+    "caries": 0.1,
+    "bone_loss": 0.2,
+    "impacted_tooth": 0.353,
+    "periapical_lesion": 0.12,
+    "root_fragment": 0.263,
+    "furcation_lesion": 0.2,
+    "apical_surgery": 0.95,
+    "orthodontic_device": 0.281,
+    "surgical_device": 0.44,
+    "root_resorption": 0.95
+  },
+  "external_dentex_tooth_level": {
+    "caries": {
+      "recall": 0.28,
+      "precision": 0.67,
+      "threshold": 0.1
+    },
+    "impacted_tooth": {
+      "recall": 0.66,
+      "precision": 0.84
+    },
+    "periapical_lesion": {
+      "recall": 0.27,
+      "precision": 0.43,
+      "n_teeth": 11
+    }
+  }
+}

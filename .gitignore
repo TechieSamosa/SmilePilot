@@ -1,0 +1,29 @@
+# dependencies & builds
+node_modules/
+app/dist/
+app/release/
+*.log
+
+# Android / iOS build outputs (see also app/android/.gitignore, app/ios/.gitignore)
+app/android/local.properties
+app/android/.gradle/
+app/android/app/build/
+app/android/build/
+
+# secrets — the Android signing key lives in ~/.dentalos, never in the repo
+*.jks
+*.keystore
+keystore.properties
+.env*
+
+# python / training
+__pycache__/
+*.pyc
+*.pt
+runs/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
